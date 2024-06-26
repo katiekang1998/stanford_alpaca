@@ -130,3 +130,20 @@ dmypy.json
 
 .DS_Store
 .idea
+
+
+
+ckpts/
+
+
+GSM8K_AUG/AugGSM8K_part1.jsonl
+GSM8K_AUG/AugGSM8K_part2.jsonl
+
+wandb/
+
+
+MATH_aug/AugMATH_part1.jsonl
+MATH_aug/AugMATH_part2.jsonl
+
+
+**/__MACOSX/
