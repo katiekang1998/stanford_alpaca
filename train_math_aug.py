@@ -128,8 +128,8 @@ def make_supervised_data_module(data_type, num_train_points, output_dir, tokeniz
     
     # subsample_idxs = np.random.choice(np.arange(0, len(train_questions)), size=len(train_questions)//2)
     
-    train_part1_accs = (np.load("ckpts/math_aug_fft_full/train_part1_answer_types5.npy")==0).sum(axis=-1)
-    train_part2_accs = (np.load("ckpts/math_aug_fft_full/train_part2_answer_types5.npy")==0).sum(axis=-1)
+    train_part1_accs = (np.load("MATH_aug/train_part1_answer_types5.npy")==0).sum(axis=-1)
+    train_part2_accs = (np.load("MATH_aug/train_part2_answer_types5.npy")==0).sum(axis=-1)
     train_accs = np.concatenate([train_part1_accs, train_part2_accs])
     
     if data_type == "hard": 
